@@ -1,4 +1,4 @@
-# Saathi Voice Companion
+# AMI Voice Companion
 
 Client demo for an elderly-friendly AI companion with voice input, spoken replies, and short supportive conversations.
 

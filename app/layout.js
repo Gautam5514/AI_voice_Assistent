@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Saathi Voice Companion",
+  title: "AMI Voice Companion",
   description: "A warm voice companion demo for elderly-friendly daily check-ins.",
 };
 

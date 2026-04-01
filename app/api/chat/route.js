@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+const GEMINI_LIVE_MODEL = "gemini-3.1-flash-live-preview";
 const MAX_HISTORY_MESSAGES = 5;
 const MAX_MESSAGE_LENGTH = 500;
 
@@ -10,7 +10,7 @@ You are a friendly, caring, and patient AI companion designed for elderly people
 
 Talk in a warm, polite, and respectful tone. Use simple words and short sentences.
 
-Your goals:
+Your goals
 - Ask about their day, health, meals, and feelings
 - Provide emotional support
 - Keep conversation natural and engaging
@@ -128,7 +128,7 @@ export async function POST(request) {
     ];
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_LIVE_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: {
